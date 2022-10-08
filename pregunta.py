@@ -38,7 +38,7 @@ def clean_data():
     df['línea_credito']=df['línea_credito'].str.replace(".","")
     df['línea_credito']=df['línea_credito'].str.strip()
     #Casos Especiales
-    df['línea_credito']=df['línea_credito'].str.replace("soli diaria","solidaria")
+    # df['línea_credito']=df['línea_credito'].str.replace("soli diaria","solidaria")
     #fecha_de_beneficio
     df.fecha_de_beneficio = pd.to_datetime(df.fecha_de_beneficio,dayfirst=True)
     #monto_del_credito
