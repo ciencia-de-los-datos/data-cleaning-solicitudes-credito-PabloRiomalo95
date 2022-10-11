@@ -26,8 +26,8 @@ def clean_data():
     df['barrio']= df['barrio'].str.lower()
     df['barrio']=df['barrio'].str.replace("-","_")
     df['barrio']=df['barrio'].str.replace("_"," ")
-    df['barrio']=df['barrio'].str.replace(".","")
-    df['barrio']=df['barrio'].str.strip()
+    # df['barrio']=df['barrio'].str.replace(".","")
+    # df['barrio']=df['barrio'].str.strip()
     #Casos Especiales
     df['barrio']=df['barrio'].str.replace("bel¿n","belen")
     df['barrio']=df['barrio'].str.replace("antonio nari¿o","antonio nariño")
